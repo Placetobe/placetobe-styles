@@ -1,0 +1,28 @@
+<link rel="import" href="../polymer/polymer.html">
+<link rel="import" href="placetobe-typography.html">
+<link rel="import" href="placetobe-color.html">
+
+<style is="custom-style">
+  :root {
+    
+    --placetobe-textinput-base: {
+      box-sizing: border-box;
+      height: 36px;
+      @apply(--placetobe-body);
+      padding: 0 12px;
+      text-align: left;
+      display: inline-block;
+      color: var(--placetobe-darkblue);
+      text-decoration: none;
+      white-space: nowrap;
+      outline: none;
+      border: 0;
+      border-radius: 5px;
+    }
+
+    --placetobe-textinput: {
+      @apply(--placetobe-textinput-base);
+    }
+
+  }
+</style>
