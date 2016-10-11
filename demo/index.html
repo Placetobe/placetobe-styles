@@ -8,36 +8,32 @@
 
     <link rel="import" href="../../iron-demo-helpers/demo-pages-shared-styles.html">
     <link rel="import" href="../../iron-demo-helpers/demo-snippet.html">
-
     <link rel="import" href="../placetobe-styles.html">
 
-    <style is="custom-style" include="demo-pages-shared-styles">
+    <style is="custom-style" include="demo-pages-shared-styles"></style>
+    <style is="custom-style">
+
       h1 {
-        @apply(--placetobe-heading1);
+        @apply(--placetobe-font-heading1);
       }
       h1.regular {
-        @apply(--placetobe-heading1-regular);
-      }
-      h2 {
-        @apply(--placetobe-heading2);
+        @apply(--placetobe-font-heading1-regular);
       }
       h3 {
-        @apply(--placetobe-heading3);
+        @apply(--placetobe-font-heading3);
       }
       h3.bold {
-        @apply(--placetobe-heading3-bold);
+        @apply(--placetobe-font-heading3-bold);
       }
       h4 {
-        @apply(--placetobe-heading4);
-      }
-      h5 {
-        @apply(--placetobe-heading5);
-      }
-      h6 {
-        @apply(--placetobe-heading6);
+        @apply(--placetobe-font-heading4);
       }
       article {
-        @apply(--placetobe-body);
+        @apply(--placetobe-font-body);
+      }
+
+      article strong {
+        @apply(--placetobe-font-body-bold);
       }
 
       span.color {
@@ -50,23 +46,23 @@
       }
 
       span.color.red {
-        background-color: var(--placetobe-red);
+        background-color: var(--placetobe-color-red);
       }
 
       span.color.darkblue {
-        background-color: var(--placetobe-darkblue);
+        background-color: var(--placetobe-color-darkblue);
       }
 
       span.color.yellow {
-        background-color: var(--placetobe-yellow);
+        background-color: var(--placetobe-color-yellow);
       }
 
       span.color.taupe {
-        background-color: var(--placetobe-taupe);
+        background-color: var(--placetobe-color-taupe);
       }
 
       span.color.gray {
-        background-color: var(--placetobe-gray);
+        background-color: var(--placetobe-color-gray);
       }
     </style>
   </head>
@@ -78,31 +74,31 @@
 
       <demo-snippet>
         <template>
-          <span class="color red">--placetobe-red</span>
+          <span class="color red">--placetobe-font-red</span>
         </template>
       </demo-snippet>
 
       <demo-snippet>
         <template>
-          <span class="color darkblue">--placetobe-darkblue</span>
+          <span class="color darkblue">--placetobe-font-darkblue</span>
         </template>
       </demo-snippet>
 
       <demo-snippet>
         <template>
-          <span class="color yellow">--placetobe-yellow</span>
+          <span class="color yellow">--placetobe-font-yellow</span>
         </template>
       </demo-snippet>
 
       <demo-snippet>
         <template>
-          <span class="color taupe">--placetobe-taupe</span>
+          <span class="color taupe">--placetobe-font-taupe</span>
         </template>
       </demo-snippet>
 
       <demo-snippet>
         <template>
-          <span class="color gray">--placetobe-gray</span>
+          <span class="color gray">--placetobe-font-gray</span>
         </template>
       </demo-snippet>
 
@@ -124,13 +120,7 @@
           <h1 class="regular">Heading 1 regular</h1>
         </template>
       </demo-snippet>
-      
-      <demo-snippet>
-        <template>
-          <h2>Heading 2</h2>
-        </template>
-      </demo-snippet>
-      
+            
       <demo-snippet>
         <template>
           <h3>Heading 3</h3>
@@ -151,19 +141,7 @@
       
       <demo-snippet>
         <template>
-          <h5>Heading 5</h5>
-        </template>
-      </demo-snippet>
-      
-      <demo-snippet>
-        <template>
-          <h6>Heading 6</h6>
-        </template>
-      </demo-snippet>
-      
-      <demo-snippet>
-        <template>
-          <article>Body: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id finibus lectus. Nunc egestas suscipit dolor, a cursus velit. Sed in feugiat arcu. Maecenas tincidunt mauris odio, ac dignissim purus gravida vel. Aliquam id ornare est, varius ultrices eros. Aliquam et ultrices orci. Nunc vehicula eu ante vitae accumsan. Cras vel hendrerit est. Aliquam finibus velit non sollicitudin pulvinar. Nullam a semper lacus. Nullam varius felis in augue tincidunt ultrices. Phasellus ac mi ornare, volutpat ipsum quis, lobortis dolor.</article>
+          <article>Body: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id finibus lectus. Nunc egestas suscipit dolor, a cursus velit. <strong>Sed in feugiat arcu. Maecenas tincidunt mauris odio, ac dignissim purus gravida vel.</strong> Aliquam id ornare est, varius ultrices eros. Aliquam et ultrices orci. Nunc vehicula eu ante vitae accumsan. Cras vel hendrerit est. Aliquam finibus velit non sollicitudin pulvinar. Nullam a semper lacus. Nullam varius felis in augue tincidunt ultrices. Phasellus ac mi ornare, volutpat ipsum quis, lobortis dolor.</article>
         </template>
       </demo-snippet>
       
