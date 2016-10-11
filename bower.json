@@ -11,6 +11,6 @@
     "web-component-tester": "^4.0.0",
     "webcomponentsjs": "webcomponents/webcomponentsjs#^0.7.0"
   },
-  "version": "0.10.0",
+  "version": "0.11.0",
   "homepage": "https://github.com/Placetobe/placetobe-styles"
 }
