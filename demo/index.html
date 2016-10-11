@@ -28,12 +28,20 @@
       h4 {
         @apply(--placetobe-font-heading4-small);
       }
+      h6 {
+        @apply(--placetobe-font-heading6-small);
+      }
       article {
         @apply(--placetobe-font-body-small);
       }
-
       article strong {
         @apply(--placetobe-font-body-bold-small);
+      }
+      article.serif {
+        @apply(--placetobe-font-body-serif-small);
+      }
+      article.serif strong {
+        @apply(--placetobe-font-body-serif-bold-small);
       }
 
       h1.large {
@@ -51,12 +59,20 @@
       h4.large {
         @apply(--placetobe-font-heading4-large);
       }
+      h6.large {
+        @apply(--placetobe-font-heading6-large);
+      }
       article.large {
         @apply(--placetobe-font-body-large);
       }
-
       article.large strong {
         @apply(--placetobe-font-body-bold-large);
+      }
+      article.serif.large {
+        @apply(--placetobe-font-body-serif-small);
+      }
+      article.serif.large strong {
+        @apply(--placetobe-font-body-serif-bold-small);
       }
 
       span.color {
@@ -194,6 +210,18 @@
       
       <demo-snippet>
         <template>
+          <h6>Heading 6</h6>
+        </template>
+      </demo-snippet>
+      
+      <demo-snippet>
+        <template>
+          <h6 class="large">Heading 6 (large)</h6>
+        </template>
+      </demo-snippet>
+
+      <demo-snippet>
+        <template>
           <article>Body: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id finibus lectus. Nunc egestas suscipit dolor, a cursus velit. <strong>Sed in feugiat arcu. Maecenas tincidunt mauris odio, ac dignissim purus gravida vel.</strong> Aliquam id ornare est, varius ultrices eros. Aliquam et ultrices orci. Nunc vehicula eu ante vitae accumsan. Cras vel hendrerit est. Aliquam finibus velit non sollicitudin pulvinar. Nullam a semper lacus. Nullam varius felis in augue tincidunt ultrices. Phasellus ac mi ornare, volutpat ipsum quis, lobortis dolor.</article>
         </template>
       </demo-snippet>
@@ -204,6 +232,17 @@
         </template>
       </demo-snippet>
 
+      <demo-snippet>
+        <template>
+          <article class="serif">Body: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id finibus lectus. Nunc egestas suscipit dolor, a cursus velit. <strong>Sed in feugiat arcu. Maecenas tincidunt mauris odio, ac dignissim purus gravida vel.</strong> Aliquam id ornare est, varius ultrices eros. Aliquam et ultrices orci. Nunc vehicula eu ante vitae accumsan. Cras vel hendrerit est. Aliquam finibus velit non sollicitudin pulvinar. Nullam a semper lacus. Nullam varius felis in augue tincidunt ultrices. Phasellus ac mi ornare, volutpat ipsum quis, lobortis dolor.</article>
+        </template>
+      </demo-snippet>
+
+      <demo-snippet>
+        <template>
+          <article class="serif large">Body: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id finibus lectus. Nunc egestas suscipit dolor, a cursus velit. <strong>Sed in feugiat arcu. Maecenas tincidunt mauris odio, ac dignissim purus gravida vel.</strong> Aliquam id ornare est, varius ultrices eros. Aliquam et ultrices orci. Nunc vehicula eu ante vitae accumsan. Cras vel hendrerit est. Aliquam finibus velit non sollicitudin pulvinar. Nullam a semper lacus. Nullam varius felis in augue tincidunt ultrices. Phasellus ac mi ornare, volutpat ipsum quis, lobortis dolor.</article>
+        </template>
+      </demo-snippet>
     </div>
 
   </body>
