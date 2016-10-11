@@ -14,26 +14,49 @@
     <style is="custom-style">
 
       h1 {
-        @apply(--placetobe-font-heading1);
+        @apply(--placetobe-font-heading1-small);
       }
       h1.regular {
-        @apply(--placetobe-font-heading1-regular);
+        @apply(--placetobe-font-heading1-regular-small);
       }
       h3 {
-        @apply(--placetobe-font-heading3);
+        @apply(--placetobe-font-heading3-small);
       }
       h3.bold {
-        @apply(--placetobe-font-heading3-bold);
+        @apply(--placetobe-font-heading3-bold-small);
       }
       h4 {
-        @apply(--placetobe-font-heading4);
+        @apply(--placetobe-font-heading4-small);
       }
       article {
-        @apply(--placetobe-font-body);
+        @apply(--placetobe-font-body-small);
       }
 
       article strong {
-        @apply(--placetobe-font-body-bold);
+        @apply(--placetobe-font-body-bold-small);
+      }
+
+      h1.large {
+        @apply(--placetobe-font-heading1-large);
+      }
+      h1.large.regular {
+        @apply(--placetobe-font-heading1-regular-large);
+      }
+      h3.large {
+        @apply(--placetobe-font-heading3-large);
+      }
+      h3.large.bold {
+        @apply(--placetobe-font-heading3-bold-large);
+      }
+      h4.large {
+        @apply(--placetobe-font-heading4-large);
+      }
+      article.large {
+        @apply(--placetobe-font-body-large);
+      }
+
+      article.large strong {
+        @apply(--placetobe-font-body-bold-large);
       }
 
       span.color {
@@ -117,7 +140,19 @@
       
       <demo-snippet>
         <template>
+          <h1 class="large">Heading 1 (large)</h1>
+        </template>
+      </demo-snippet>
+      
+      <demo-snippet>
+        <template>
           <h1 class="regular">Heading 1 regular</h1>
+        </template>
+      </demo-snippet>
+
+      <demo-snippet>
+        <template>
+          <h1 class="large regular">Heading 1 regular (large)</h1>
         </template>
       </demo-snippet>
             
@@ -129,7 +164,19 @@
       
       <demo-snippet>
         <template>
+          <h3 class="large">Heading 3 (large)</h3>
+        </template>
+      </demo-snippet>
+      
+      <demo-snippet>
+        <template>
           <h3 class="bold">Heading 3 Bold</h3>
+        </template>
+      </demo-snippet>
+      
+      <demo-snippet>
+        <template>
+          <h3 class="large bold">Heading 3 Bold (large)</h3>
         </template>
       </demo-snippet>
       
@@ -141,10 +188,22 @@
       
       <demo-snippet>
         <template>
-          <article>Body: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id finibus lectus. Nunc egestas suscipit dolor, a cursus velit. <strong>Sed in feugiat arcu. Maecenas tincidunt mauris odio, ac dignissim purus gravida vel.</strong> Aliquam id ornare est, varius ultrices eros. Aliquam et ultrices orci. Nunc vehicula eu ante vitae accumsan. Cras vel hendrerit est. Aliquam finibus velit non sollicitudin pulvinar. Nullam a semper lacus. Nullam varius felis in augue tincidunt ultrices. Phasellus ac mi ornare, volutpat ipsum quis, lobortis dolor.</article>
+          <h4 class="large">Heading 4 (large)</h4>
         </template>
       </demo-snippet>
       
+      <demo-snippet>
+        <template>
+          <article>Body: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id finibus lectus. Nunc egestas suscipit dolor, a cursus velit. <strong>Sed in feugiat arcu. Maecenas tincidunt mauris odio, ac dignissim purus gravida vel.</strong> Aliquam id ornare est, varius ultrices eros. Aliquam et ultrices orci. Nunc vehicula eu ante vitae accumsan. Cras vel hendrerit est. Aliquam finibus velit non sollicitudin pulvinar. Nullam a semper lacus. Nullam varius felis in augue tincidunt ultrices. Phasellus ac mi ornare, volutpat ipsum quis, lobortis dolor.</article>
+        </template>
+      </demo-snippet>
+
+      <demo-snippet>
+        <template>
+          <article class="large">Body: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id finibus lectus. Nunc egestas suscipit dolor, a cursus velit. <strong>Sed in feugiat arcu. Maecenas tincidunt mauris odio, ac dignissim purus gravida vel.</strong> Aliquam id ornare est, varius ultrices eros. Aliquam et ultrices orci. Nunc vehicula eu ante vitae accumsan. Cras vel hendrerit est. Aliquam finibus velit non sollicitudin pulvinar. Nullam a semper lacus. Nullam varius felis in augue tincidunt ultrices. Phasellus ac mi ornare, volutpat ipsum quis, lobortis dolor.</article>
+        </template>
+      </demo-snippet>
+
     </div>
 
   </body>

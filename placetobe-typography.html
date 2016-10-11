@@ -46,7 +46,17 @@
     --placetobe-font-heading1-base: {
       @apply(--placetobe-font-adelle-base);
       font-style: normal;
-      line-height: 1.37;
+      line-height: 1.37;      
+    }
+
+    --placetobe-font-heading1: {
+      @apply(--placetobe-font-heading1-base);
+      font-weight: 700;
+    }
+
+    --placetobe-font-heading1-regular: {
+      @apply(--placetobe-font-heading1-base);
+      font-weight: 400;
     }
 
     /*
@@ -56,7 +66,17 @@
     --placetobe-font-heading3-base: {
       @apply(--placetobe-font-omnes-base);
       font-style: normal;
-      line-height: 1.25;
+      line-height: 1.25;      
+    }
+
+    --placetobe-font-heading3: {
+      @apply(--placetobe-font-heading3-base);
+      font-weight: 400;
+    }
+
+    --placetobe-font-heading3-bold: {
+      @apply(--placetobe-font-heading3-base);
+      font-weight: 500;
     }
 
     /*
@@ -66,7 +86,11 @@
     --placetobe-font-heading4-base: {
       @apply(--placetobe-font-adelle-base);
       font-style: normal;
-      line-height: 1.56;
+      line-height: 1.56;      
+    }
+
+    --placetobe-font-heading4: {
+      @apply(--placetobe-font-heading4-base);
       font-weight: 700;
     }
 
@@ -76,97 +100,104 @@
 
     --placetobe-font-body-base: {
       @apply(--placetobe-font-omnes-base);
-      line-height: 1.41;
+      line-height: 1.41;      
     }
 
     --placetobe-font-body: {
       @apply(--placetobe-font-body-base);
       font-weight: 400;      
-      font-size: 18px;
     }
 
     --placetobe-font-body-bold: {
       @apply(--placetobe-font-body-base);
       font-weight: 500;      
+    }
+
+
+    /*
+      Small
+      Recommended for @media (max-width --placetobe-breakpoint--phone);
+    */
+        
+    --placetobe-font-heading1-small: {
+      @apply(--placetobe-font-heading1);
+      font-size: 24px;
+    }
+
+    --placetobe-font-heading1-regular-small: {
+      @apply(--placetobe-font-heading1-regular);
+      font-size: 24px;
+    }
+
+    --placetobe-font-heading3-small: {
+      @apply(--placetobe-font-heading3);
+      font-size: 26px;
+    }
+
+    --placetobe-font-heading3-bold-small: {
+      @apply(--placetobe-font-heading3-bold);
+      font-size: 26px;
+    }
+
+    --placetobe-font-heading4-small: {
+      @apply(--placetobe-font-heading4);
+      font-size: 16px;        
+    }
+
+    --placetobe-font-body-small: {
+      @apply(--placetobe-font-body);
       font-size: 18px;
     }
 
-  }
-
-  /* Phone */
-
-  @media screen and (max-width: 600px) {
-
-    html {
-      
-      --placetobe-font-heading1: {
-        @apply(--placetobe-font-heading1-base);
-        font-weight: 700;
-        font-size: 24px;
-      }
-
-      --placetobe-font-heading1-regular: {
-        @apply(--placetobe-font-heading1-base);
-        font-weight: 400;
-        font-size: 24px;
-      }
-
-      --placetobe-font-heading3: {
-        @apply(--placetobe-font-heading3-base);
-        font-weight: 600;
-        font-size: 26px;
-      }
-
-      --placetobe-font-heading3-bold: {
-        @apply(--placetobe-font-heading3-base);
-        font-weight: 700;
-        font-size: 26px;
-      }
-
-      --placetobe-font-heading4: {
-        @apply(--placetobe-font-heading4-base);
-        font-size: 16px;        
-      }
-
+    --placetobe-font-body-bold-small: {
+      @apply(--placetobe-font-body-bold);
+      font-size: 18px;
     }
 
-  }
 
-  /* Tablet + Desktop */
+    /*
+      Large
+      Recommended for @media (min-width --placetobe-breakpoint--phone);
+    */ 
+      
+    --placetobe-font-heading1-large: {
+      @apply(--placetobe-font-heading1);
+      font-size: 29px;
+    }
 
-  @media only screen and (min-width: 600px) {
-    
-    html {
-    
-      --placetobe-font-heading1: {
-        @apply(--placetobe-font-heading1-base);
-        font-weight: 700;
-        font-size: 29px;
-      }
+    --placetobe-font-heading1-regular-large: {
+      @apply(--placetobe-font-heading1-regular);
+      font-size: 29px;
+    }
 
-      --placetobe-font-heading1-regular: {
-        @apply(--placetobe-font-heading1-base);
-        font-weight: 400;
-        font-size: 29px;
-      }
+    --placetobe-font-heading3-large: {
+      @apply(--placetobe-font-heading3);
+      font-size: 32px;
+    }
 
-      --placetobe-font-heading3: {
-        @apply(--placetobe-font-heading3-base);
-        font-weight: 400;
-        font-size: 32px;
-      }
+    --placetobe-font-heading3-bold-large: {
+      @apply(--placetobe-font-heading3-bold);
+      font-size: 32px;
+    }
 
-      --placetobe-font-heading3-bold: {
-        @apply(--placetobe-font-heading3-base);
-        font-weight: 600;
-        font-size: 32px;
-      }
+    --placetobe-font-heading4-large: {
+      @apply(--placetobe-font-heading4);
+      font-size: 20px;
+    }
 
-      --placetobe-font-heading4: {
-        @apply(--placetobe-font-heading4-base);
-        font-size: 20px;
-      }
+    --placetobe-font-heading1-large: {
+      @apply(--placetobe-font-heading1);
+      font-size: 29px;
+    }
 
+    --placetobe-font-body-large: {
+      @apply(--placetobe-font-body);
+      font-size: 18px;
+    }
+
+    --placetobe-font-body-bold-large: {
+      @apply(--placetobe-font-body-bold);
+      font-size: 18px;
     }
 
   }
