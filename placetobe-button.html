@@ -1,5 +1,6 @@
 <link rel="import" href="../polymer/polymer.html">
 <link rel="import" href="placetobe-color.html">
+<link rel="import" href="placetobe-typography.html">
 
 <style is="custom-style">
   html {
@@ -38,10 +39,34 @@
       box-shadow: 0 3px 0 var(--placetobe-color-darkblue);
     }
 
+    --placetobe-default-button-small: {
+      @apply(--placetobe-button);
+      @apply(--placetobe-font-heading4-small);
+      padding: 11px 12px;
+      height: 44px;
+    }
+
+    --placetobe-default-button-large: {
+      @apply(--placetobe-button);
+      @apply(--placetobe-font-heading4-large);
+      padding: 13px 18px;
+      height: 54px;
+    }
+
     --placetobe-link-button: {
       @apply(--placetobe-button-base);
       padding: 0;
       background-color: transparent;
+    }
+
+    --placetobe-link-button-small: {
+      @apply(--placetobe-blink-utton);
+      @apply(--placetobe-font-heading4-small);
+    }
+
+    --placetobe-link-button-large: {
+      @apply(--placetobe-link-button);
+      @apply(--placetobe-font-heading4-large);
     }
 
   }
