@@ -13,6 +13,9 @@
     <style is="custom-style" include="demo-pages-shared-styles"></style>
     <style is="custom-style">
 
+      h1.title {
+        @apply(--placetobe-font-title-small);
+      }
       h1 {
         @apply(--placetobe-font-heading1-small);
       }
@@ -44,6 +47,9 @@
         @apply(--placetobe-font-body-serif-bold-small);
       }
 
+      h1.large.title {
+        @apply(--placetobe-font-title-large);
+      }
       h1.large {
         @apply(--placetobe-font-heading1-large);
       }
@@ -148,6 +154,17 @@
       <h3>Typography</h3>
       <br>
       
+      <demo-snippet>
+        <template>
+          <h1 class="title">Title</h1>
+        </template>
+      </demo-snippet>
+      
+      <demo-snippet>
+        <template>
+          <h1 class="large title">Title (large)</h1>
+        </template>
+      </demo-snippet>      
       <demo-snippet>
         <template>
           <h1>Heading 1</h1>

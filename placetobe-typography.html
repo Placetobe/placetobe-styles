@@ -37,6 +37,22 @@
       font-family: "omnes-pro", Tahoma, "Geneva", arial, helvetica, sans-serif;
     }
 
+
+    /*
+    Title
+    */
+
+    --placetobe-font-title-base: {
+      @apply(--placetobe-font-adelle-base);
+      font-style: normal;
+      line-height: 1.13;      
+    }
+
+    --placetobe-font-title: {
+      @apply(--placetobe-font-title-base);
+      font-weight: 700;
+    }
+
     /*
     Heading 1
     */
@@ -130,6 +146,11 @@
       Small
       Recommended for @media (max-width --placetobe-breakpoint--phone);
     */
+
+    --placetobe-font-title-small: {
+      @apply(--placetobe-font-title);
+      font-size: 53px;
+    }
         
     --placetobe-font-heading1-small: {
       @apply(--placetobe-font-heading1);
@@ -186,6 +207,11 @@
       Recommended for @media (min-width --placetobe-breakpoint--phone);
     */ 
       
+    --placetobe-font-title-large: {
+      @apply(--placetobe-font-title);
+      font-size: 64px;
+    }
+
     --placetobe-font-heading1-large: {
       @apply(--placetobe-font-heading1);
       font-size: 29px;
