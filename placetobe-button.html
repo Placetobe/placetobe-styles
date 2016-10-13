@@ -28,31 +28,28 @@
       -moz-user-select: none;
       -ms-user-select: none;
       -o-user-select: none;
-      color: var(--placetobe-button-tint-color, var(--placetobe-color-darkblue));
+      color: var(--placetobe-color-darkblue);
     }
 
-    --placetobe-button: {
+    --placetobe-button-default: {
       @apply(--placetobe-button-base);
       border-radius: 5px;
-      background-color: var(--placetobe-button-color, var(--placetobe-color-taupe));
-      box-shadow: 0 3px 0 var(--placetobe-button-tint-color, var(--placetobe-color-darkblue));
+      background-color: var(--placetobe-color-taupe);
+      box-shadow: 0 3px 0 var(--placetobe-color-darkblue);
     }
 
-    --placetobe-button-raised: {
-      background-color: var(--placetobe-button-hover-color, var(--placetobe-color-gray));
-      color: var(--placetobe-button-tint-hover-color, var(--placetobe-button-tint-color));
-      box-shadow: 0 3px 0 var(--placetobe-button-tint-hover-color, var(--placetobe-button-tint-color));
+    --placetobe-button-default-pressed: {
+      @apply(--placetobe-button-base);
+      border-radius: 5px;
+      background-color: var(--placetobe-color-taupe);
+      box-shadow: 0;
     }
 
-    --placetobe-button-flat: {
+    --placetobe-button-link: {
       @apply(--placetobe-button-base);
       padding: 0;
       background-color: transparent;
       box-shadow: none;
-    }
-
-    --placetobe-button-flat-raised: {
-      color: var(--placetobe-button-tint-hover-color, var(--placetobe-color-red));
     }
 
   }
