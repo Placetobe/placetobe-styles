@@ -1,0 +1,59 @@
+<link rel="import" href="../polymer/polymer.html">
+<link rel="import" href="placetobe-color.html">
+
+<style is="custom-style">
+  html {
+
+    --placetobe-button-base: {
+      box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      -ms-box-sizing: border-box;
+      -o-box-sizing: border-box;
+      text-align: center;
+      display: inline-block;
+      cursor: pointer;
+      text-decoration: none;
+      white-space: nowrap;
+      outline: none;
+      border: 0;
+      appearance: none;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      -ms-appearance: none;
+      -o-appearance: none;
+      -webkit-tap-highlight-color: transparent;
+      user-select: none;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      -o-user-select: none;
+      color: var(--placetobe-button-tint-color, var(--placetobe-color-darkblue));
+    }
+
+    --placetobe-button: {
+      @apply(--placetobe-button-base);
+      border-radius: 5px;
+      background-color: var(--placetobe-button-color, var(--placetobe-color-taupe));
+      box-shadow: 0 3px 0 var(--placetobe-button-tint-color, var(--placetobe-color-darkblue));
+    }
+
+    --placetobe-button-raised: {
+      background-color: var(--placetobe-button-hover-color, var(--placetobe-color-gray));
+      color: var(--placetobe-button-tint-hover-color, var(--placetobe-button-tint-color));
+      box-shadow: 0 3px 0 var(--placetobe-button-tint-hover-color, var(--placetobe-button-tint-color));
+    }
+
+    --placetobe-button-flat: {
+      @apply(--placetobe-button-base);
+      padding: 0;
+      background-color: transparent;
+      box-shadow: none;
+    }
+
+    --placetobe-button-flat-raised: {
+      color: var(--placetobe-button-tint-hover-color, var(--placetobe-color-red));
+    }
+
+  }
+</style>
