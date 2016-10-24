@@ -87,6 +87,14 @@
       span.color.gray {
         background-color: var(--placetobe-color-gray);
       }
+
+      button:not(.link) {
+        @apply(--placetobe-default-button);
+      }
+
+      button.link {
+        @apply(--placetobe-link-button);
+      }
     </style>
   </head>
   <body>
@@ -188,5 +196,23 @@
 
     </div>
 
+    <div class="vertical-section-container centered">
+      <h3>Buttons</h3>
+      <br>
+
+      <demo-snippet>
+        <template>
+          <button>Default button</button>
+        </template>
+      </demo-snippet>
+
+      <demo-snippet>
+        <template>
+          <button class="link">Link button</button>
+        </template>
+      </demo-snippet>
+
+    </div>
+    
   </body>
 </html>

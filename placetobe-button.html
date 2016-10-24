@@ -32,38 +32,29 @@
       color: var(--placetobe-color-darkblue);
     }
 
-    --placetobe-default-button: {
+    --placetobe-default-button-base: {
       @apply(--placetobe-button-base);
       border-radius: 5px;
       background-color: var(--placetobe-color-taupe);
-      box-shadow: 0 3px 0 var(--placetobe-color-darkblue);
     }
 
-    --placetobe-default-button-small: {
-      @apply(--placetobe-default-button);
+    --placetobe-default-button: {
+      @apply(--placetobe-default-button-base);
       @apply(--placetobe-font-heading4);
+      font-size: var(--placetobe-font-heading4-size--small);
+      box-shadow: 0 3px 0 var(--placetobe-color-darkblue);
       padding: 16px 24px;
       height: 54px;
     }
 
-    --placetobe-default-button-large: {
-      @apply(--placetobe-default-button);
-    }
-
     --placetobe-link-button: {
       @apply(--placetobe-button-base);
-      padding: 0;
-      background-color: transparent;
-    }
-
-    --placetobe-link-button-small: {
-      @apply(--placetobe-link-button);
       @apply(--placetobe-font-heading4);
-    }
-
-    --placetobe-link-button-large: {
-      @apply(--placetobe-link-button);
+      font-size: var(--placetobe-font-heading4-size--small);
+      background-color: transparent;
+      padding: 0;
     }
 
   }
+
 </style>
