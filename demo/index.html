@@ -6,79 +6,57 @@
     <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1, user-scalable=yes">
     <script src="../../webcomponentsjs/webcomponents-lite.js"></script>
 
+    <script>
+      window.Polymer = {
+        useNativeCSSProperties: true,
+        lazyRegister: true,
+        dom: 'shadow'
+      };
+    </script>
+
     <link rel="import" href="../../iron-demo-helpers/demo-pages-shared-styles.html">
     <link rel="import" href="../../iron-demo-helpers/demo-snippet.html">
     <link rel="import" href="../placetobe-styles.html">
 
-    <style is="custom-style" include="demo-pages-shared-styles"></style>
-    <style is="custom-style">
+    <style is="custom-style" include="demo-pages-shared-styles">
+      demo-snippet {
+        --demo-snippet-demo: {
+          display: block;
+        }
+      }
 
       h1.title {
-        @apply(--placetobe-font-title-small);
+        @apply(--placetobe-font-title);
       }
       h1 {
-        @apply(--placetobe-font-heading1-small);
+        @apply(--placetobe-font-heading1);
       }
       h1.regular {
-        @apply(--placetobe-font-heading1-regular-small);
+        @apply(--placetobe-font-heading1-regular);
       }
       h3 {
-        @apply(--placetobe-font-heading3-small);
+        @apply(--placetobe-font-heading3);
       }
       h3.bold {
-        @apply(--placetobe-font-heading3-bold-small);
+        @apply(--placetobe-font-heading3-bold);
       }
       h4 {
-        @apply(--placetobe-font-heading4-small);
+        @apply(--placetobe-font-heading4);
       }
       h6 {
-        @apply(--placetobe-font-heading6-small);
+        @apply(--placetobe-font-heading6);
       }
       article {
-        @apply(--placetobe-font-body-small);
+        @apply(--placetobe-font-body);
       }
       article strong {
-        @apply(--placetobe-font-body-bold-small);
+        @apply(--placetobe-font-body-bold);
       }
       article.serif {
-        @apply(--placetobe-font-body-serif-small);
+        @apply(--placetobe-font-body-serif);
       }
       article.serif strong {
-        @apply(--placetobe-font-body-serif-bold-small);
-      }
-
-      h1.large.title {
-        @apply(--placetobe-font-title-large);
-      }
-      h1.large {
-        @apply(--placetobe-font-heading1-large);
-      }
-      h1.large.regular {
-        @apply(--placetobe-font-heading1-regular-large);
-      }
-      h3.large {
-        @apply(--placetobe-font-heading3-large);
-      }
-      h3.large.bold {
-        @apply(--placetobe-font-heading3-bold-large);
-      }
-      h4.large {
-        @apply(--placetobe-font-heading4-large);
-      }
-      h6.large {
-        @apply(--placetobe-font-heading6-large);
-      }
-      article.large {
-        @apply(--placetobe-font-body-large);
-      }
-      article.large strong {
-        @apply(--placetobe-font-body-bold-large);
-      }
-      article.serif.large {
-        @apply(--placetobe-font-body-serif-small);
-      }
-      article.serif.large strong {
-        @apply(--placetobe-font-body-serif-bold-small);
+        @apply(--placetobe-font-body-serif-bold);
       }
 
       span.color {
@@ -159,12 +137,7 @@
           <h1 class="title">Title</h1>
         </template>
       </demo-snippet>
-      
-      <demo-snippet>
-        <template>
-          <h1 class="large title">Title (large)</h1>
-        </template>
-      </demo-snippet>      
+
       <demo-snippet>
         <template>
           <h1>Heading 1</h1>
@@ -173,19 +146,7 @@
       
       <demo-snippet>
         <template>
-          <h1 class="large">Heading 1 (large)</h1>
-        </template>
-      </demo-snippet>
-      
-      <demo-snippet>
-        <template>
           <h1 class="regular">Heading 1 regular</h1>
-        </template>
-      </demo-snippet>
-
-      <demo-snippet>
-        <template>
-          <h1 class="large regular">Heading 1 regular (large)</h1>
         </template>
       </demo-snippet>
             
@@ -194,25 +155,13 @@
           <h3>Heading 3</h3>
         </template>
       </demo-snippet>
-      
-      <demo-snippet>
-        <template>
-          <h3 class="large">Heading 3 (large)</h3>
-        </template>
-      </demo-snippet>
-      
+
       <demo-snippet>
         <template>
           <h3 class="bold">Heading 3 Bold</h3>
         </template>
       </demo-snippet>
-      
-      <demo-snippet>
-        <template>
-          <h3 class="large bold">Heading 3 Bold (large)</h3>
-        </template>
-      </demo-snippet>
-      
+
       <demo-snippet>
         <template>
           <h4>Heading 4</h4>
@@ -221,19 +170,7 @@
       
       <demo-snippet>
         <template>
-          <h4 class="large">Heading 4 (large)</h4>
-        </template>
-      </demo-snippet>
-      
-      <demo-snippet>
-        <template>
           <h6>Heading 6</h6>
-        </template>
-      </demo-snippet>
-      
-      <demo-snippet>
-        <template>
-          <h6 class="large">Heading 6 (large)</h6>
         </template>
       </demo-snippet>
 
@@ -245,21 +182,10 @@
 
       <demo-snippet>
         <template>
-          <article class="large">Body: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id finibus lectus. Nunc egestas suscipit dolor, a cursus velit. <strong>Sed in feugiat arcu. Maecenas tincidunt mauris odio, ac dignissim purus gravida vel.</strong> Aliquam id ornare est, varius ultrices eros. Aliquam et ultrices orci. Nunc vehicula eu ante vitae accumsan. Cras vel hendrerit est. Aliquam finibus velit non sollicitudin pulvinar. Nullam a semper lacus. Nullam varius felis in augue tincidunt ultrices. Phasellus ac mi ornare, volutpat ipsum quis, lobortis dolor.</article>
-        </template>
-      </demo-snippet>
-
-      <demo-snippet>
-        <template>
           <article class="serif">Body: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id finibus lectus. Nunc egestas suscipit dolor, a cursus velit. <strong>Sed in feugiat arcu. Maecenas tincidunt mauris odio, ac dignissim purus gravida vel.</strong> Aliquam id ornare est, varius ultrices eros. Aliquam et ultrices orci. Nunc vehicula eu ante vitae accumsan. Cras vel hendrerit est. Aliquam finibus velit non sollicitudin pulvinar. Nullam a semper lacus. Nullam varius felis in augue tincidunt ultrices. Phasellus ac mi ornare, volutpat ipsum quis, lobortis dolor.</article>
         </template>
       </demo-snippet>
 
-      <demo-snippet>
-        <template>
-          <article class="serif large">Body: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id finibus lectus. Nunc egestas suscipit dolor, a cursus velit. <strong>Sed in feugiat arcu. Maecenas tincidunt mauris odio, ac dignissim purus gravida vel.</strong> Aliquam id ornare est, varius ultrices eros. Aliquam et ultrices orci. Nunc vehicula eu ante vitae accumsan. Cras vel hendrerit est. Aliquam finibus velit non sollicitudin pulvinar. Nullam a semper lacus. Nullam varius felis in augue tincidunt ultrices. Phasellus ac mi ornare, volutpat ipsum quis, lobortis dolor.</article>
-        </template>
-      </demo-snippet>
     </div>
 
   </body>
