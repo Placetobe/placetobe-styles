@@ -22,6 +22,7 @@
       demo-snippet {
         --demo-snippet-demo: {
           display: block;
+          background-color: #eee;
         }
       }
 
@@ -94,6 +95,10 @@
 
       button.link {
         @apply(--placetobe-link-button);
+      }
+
+      input {
+        @apply(--placetobe-textinput);
       }
     </style>
   </head>
@@ -214,5 +219,16 @@
 
     </div>
     
+    <div class="vertical-section-container centered">
+      <h3>Input</h3>
+      <br>
+
+      <demo-snippet>
+        <template>
+          <input type="text" placeholder="Type in your name">
+        </template>
+      </demo-snippet>
+
+    </div>
   </body>
 </html>
