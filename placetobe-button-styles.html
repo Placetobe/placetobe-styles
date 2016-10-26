@@ -1,16 +1,12 @@
 <link rel="import" href="../polymer/polymer.html">
-<link rel="import" href="placetobe-color.html">
-<link rel="import" href="placetobe-typography.html">
+<link rel="import" href="placetobe-color-styles.html">
+<link rel="import" href="placetobe-typography-styles.html">
 
 <style is="custom-style">
   html {
 
     --placetobe-button-base: {
-      box-sizing: border-box;
-      -webkit-box-sizing: border-box;
-      -moz-box-sizing: border-box;
-      -ms-box-sizing: border-box;
-      -o-box-sizing: border-box;
+      @apply(--placetobe-border-box);
       text-align: center;
       display: inline-block;
       cursor: pointer;
@@ -18,11 +14,6 @@
       white-space: nowrap;
       outline: none;
       border: 0;
-      appearance: none;
-      -webkit-appearance: none;
-      -moz-appearance: none;
-      -ms-appearance: none;
-      -o-appearance: none;
       -webkit-tap-highlight-color: transparent;
       user-select: none;
       -webkit-user-select: none;
@@ -34,7 +25,7 @@
 
     --placetobe-default-button-base: {
       @apply(--placetobe-button-base);
-      border-radius: 5px;
+      border-radius: var(--placetobe-border-radius);
       background-color: var(--placetobe-color-taupe);
     }
 
@@ -43,7 +34,7 @@
       @apply(--placetobe-font-heading4);
       font-size: var(--placetobe-font-heading4-size);
       box-shadow: 0 3px 0 var(--placetobe-color-darkblue);
-      padding: 16px 24px;
+      padding: 14px 24px;
       height: 54px;
     }
 
