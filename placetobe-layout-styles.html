@@ -34,11 +34,25 @@
       flex-direction: column;
     }
 
+    --placetobe-flex-layout--vertical-reverse: {
+      @apply(--placetobe-flex-layout);
+      -moz-flex-direction: column-reverse;
+      -webkit-flex-direction: column-reverse;
+      flex-direction: column-reverse;
+    }
+
     --placetobe-flex-layout--horizontal: {
       @apply(--placetobe-flex-layout);
       -moz-flex-direction: row;
       -webkit-flex-direction: row;
       flex-direction: row;
+    }
+
+    --placetobe-flex-layout--horizontal-reverse: {
+      @apply(--placetobe-flex-layout);
+      -moz-flex-direction: row-reverse;
+      -webkit-flex-direction: row-reverse;
+      flex-direction: row-reverse;
     }
 
     --placetobe-flex-align--start: {
