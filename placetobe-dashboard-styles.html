@@ -6,6 +6,12 @@
 
     <style is="custom-style">
 
+      :host {
+        display: block;
+        @apply --placetobe-flex-layout--vertical;
+        @apply --placetobe-cross-align--center;
+      }
+
       :host header {
         max-width: var(--placetobe-two-column-width);
         margin-left: auto;
@@ -94,6 +100,52 @@
       :host main article h3 {
         @apply --placetobe-font-heading6;
         margin-bottom: var(--placetobe-margin);
+      }
+
+      placetobe-signin-card {
+        width: 100%;
+        max-width: 540px;
+      }
+
+      placetobe-card {
+        width: 100%;
+        display: flex;
+        flex-direction: horizontal;
+        flex-basis: wrap;
+        --placetobe-card-color: var(--placetobe-color-gray);
+        margin-bottom: var(--placetobe-margin);
+      }
+
+      :host ul {
+        list-style: none;
+        padding: 0;
+      }
+
+      li {
+        display: flex;
+        padding-bottom: 5px;
+        display: flex;
+        flex-direction: horizontal;
+        flex-basis: wrap;
+      }
+      placetobe-input-box {
+        flex: 1;
+        padding: 0 3px;
+       --input-box-disabled-background-color: var(-placetobe-color-yellow);
+      }
+
+      :host placetobe-navigation-bar {
+        position: relative;
+        z-index: 9;
+        width: 100%;
+      }
+
+      .warning {
+        padding-bottom: var(--placetobe-margin);
+      }
+
+      aside placetobe-card {
+        --placetobe-card-color: var(--placetobe-color-yellow);
       }
 
     </style>
