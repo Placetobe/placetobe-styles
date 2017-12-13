@@ -33,10 +33,13 @@
         margin-bottom: var(--placetobe-margin);
       }
 
-      :host header h2 {
+      :host h2 {
         @apply(--placetobe-font-heading1-regular);
         margin-bottom:  var(--placetobe-margin);
-        text-align: center;
+      }
+
+      :host header h2 {
+        text-align: center;        
       }
 
       :host header placetobe-button {
@@ -114,10 +117,10 @@
         flex-basis: wrap;
         --placetobe-card-color: var(--placetobe-color-gray);
         margin-bottom: var(--placetobe-margin);
+        list-style: none;
       }
 
       :host ul {
-        list-style: none;
         padding: 0;
       }
 
