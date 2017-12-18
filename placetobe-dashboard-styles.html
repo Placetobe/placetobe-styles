@@ -157,6 +157,16 @@
         --placetobe-card-color: var(--placetobe-color-yellow);
       }
 
+      paper-spinner-lite {
+        --paper-spinner-color: var(--placetobe-color-darkblue);
+        display: block;
+        margin: 0 auto;    
+      }
+
+      paper-spinner-lite[active] {
+        margin: calc(var(--placetobe-margin) *2) auto;
+      }
+
     </style>
 
   </template>
